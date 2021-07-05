@@ -9,6 +9,14 @@ package edu.utfpr.cp.dacom.sa.soilcorrection;
  *
  * @author tiago
  */
-public class CorrecaoCalcio {
 
+//Ca = Cálcio
+//K = Potássio
+//Mg = Magnésio
+public class CorrecaoCalcio {
+     
+    public double somaKCaMg(double potassio, double calcio, double magnesio){
+        return(potassio+calcio+magnesio);
+    }
+    
 }
