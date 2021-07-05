@@ -73,4 +73,25 @@ public class TestaValoresIdeais {
                 assertEquals(17.848837209302324, new EquilibrioCorrecaoCTC()
                                 .calculaCarbono(new EquilibrioCorrecaoCTC().calculaMOPercentual(30.7)));
         }
+        
+        @Test 
+        public void testaMgIdeal2(){
+             assertEquals("8 a 12", new CorrecaoMagnesio().PegarMgIdeal(2));
+        }
+
+        @Test 
+        public void testaMgIdeal1(){
+             assertEquals("10 a 15", new CorrecaoMagnesio().PegarMgIdeal(1));
+        }
+        
+        @Test 
+        public void testaCaIdeal2(){
+             assertEquals("35 a 40", new CorrecaoCalcio().PegarCaIdeal(2));
+        }
+
+        @Test 
+        public void testaCaIdeal1(){
+             assertEquals("45 a 55", new CorrecaoCalcio().PegarCaIdeal(1));
+        }
+  
 }
