@@ -19,4 +19,21 @@ public class CorrecaoCalcio {
         return(potassio+calcio+magnesio);
     }
     
+    double PartAtualCa(double Ca, double Hal,double somaKCaMg) {
+        return (Ca/(somaKCaMg*100));
+    }
+    
+    String CaIdeal(int txtSolo){
+       if ((txtSolo>=1)||(txtSolo<=2)){
+           if(txtSolo==1){
+            return "45 a 55";
+           }else if(txtSolo==2){
+            return "35 a 40";
+           }
+        }else{
+            return null;
+        }
+        return null;
+    }
+    
 }
