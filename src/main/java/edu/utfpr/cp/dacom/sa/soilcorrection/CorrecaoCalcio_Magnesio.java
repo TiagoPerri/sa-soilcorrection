@@ -62,5 +62,16 @@ public class CorrecaoCalcio_Magnesio {
         
         return(qtdCorretivo*100/prneutralizantetotal);
     }
- 
+       
+    public double CustoR$PorHectare(double custo, double qtdAplicar){
+        if(custo<=0){
+            return 0;
+        }
+      
+        if(qtdAplicar<=0){
+            return 0;
+        }
+        
+        return(custo*qtdAplicar/1000);
+    }
 }

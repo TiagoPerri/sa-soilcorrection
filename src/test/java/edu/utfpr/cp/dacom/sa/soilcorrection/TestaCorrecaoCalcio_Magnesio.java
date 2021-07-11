@@ -33,4 +33,8 @@ public class TestaCorrecaoCalcio_Magnesio {
         assertEquals(1.8428571428571427, new CorrecaoCalcio_Magnesio().QtdAplicarTonHectare(1.29, 70.00));
     }
    
+    @Test // valor do segundo parâmetro retirado do cálculo: 1.845293978571427*1000.00
+    public void CustoR$PorHectare() { 
+        assertEquals(922.682028553815, new CorrecaoCalcio_Magnesio().QtdAplicarTonHectare(500.0, 1845.29397857));
+    }
 }
