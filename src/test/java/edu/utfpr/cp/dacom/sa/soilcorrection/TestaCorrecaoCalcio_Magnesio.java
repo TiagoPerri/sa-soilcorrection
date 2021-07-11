@@ -27,5 +27,10 @@ public class TestaCorrecaoCalcio_Magnesio {
         double somaPotassioCalcioMagnesio = new CorrecaoCalcio_Magnesio().somaPotassioCalcioMagnesio(0.11, 5.72, 1.59);
         assertEquals(13.84, new CorrecaoCalcio_Magnesio().CalcCorrecaoMagnesio(1.75,somaPotassioCalcioMagnesio,5.31));
     }
+    
+    @Test
+    public void testaQtdAplicarTonHectare() { 
+        assertEquals(1.8428571428571427, new CorrecaoCalcio_Magnesio().QtdAplicarTonHectare(1.29, 70.00));
+    }
    
 }

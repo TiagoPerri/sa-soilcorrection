@@ -51,4 +51,16 @@ public class CorrecaoCalcio_Magnesio {
         return (Calcio/(somaPotassioCalcioMagnesio*100));
     }
       
+    public double QtdAplicarTonHectare(double qtdCorretivo, double prneutralizantetotal){
+        if(prneutralizantetotal<=0){
+            return 0;
+        }
+        
+        if(qtdCorretivo<=0){
+            return 0;
+        }
+        
+        return(qtdCorretivo*100/prneutralizantetotal);
+    }
+ 
 }
