@@ -4,19 +4,20 @@
  * and open the template in the editor.
  */
 package edu.utfpr.cp.dacom.sa.soilcorrection;
-
 import java.util.Set;
+
 /**
  *
  * @author tiago
  */
-public class FonteCalcioMagnesio {
-    CALCARIO_DOLOMITICO(0.304,Set.of()),
-    CALCARIO_CALCITIVO(0.560,Set.of()),
-    CALCARIO_CONCHA(0.540,Set.of()),
-    GESSO_AGRICOLA(0.290,Set.of()),
-    HIDROXIDO_CALCIO(0.757,Set.of()),
-    CALCARIO_MAGNESIANO(0.350,Set.of());
+public class FonteCalcioMagnesio implements IFonteNutriente{
+    
+    CALCARIO_DOLOMITICO(0.304, Set.of()),
+    CALCARIO_CALCITICO(0.56, Set.of()),
+    CALCARIO_DE_CONCHA(0.54, Set.of()),
+    GESSO_AGRICOLA(0.29, Set.of()),
+    HIDROXIDO_DE_CALCIO(0.757, Set.of()),
+    CALCARIO_MAGNESIANO(0.35, Set.of());
     
     private final double teorFonte;
     private final Set<NutrienteAdicional> nutrientesAdicionais;
