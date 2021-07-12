@@ -10,7 +10,7 @@ package edu.utfpr.cp.dacom.sa.soilcorrection;
  * @author tiago
  */
 
-public class CorrecaoCalcio_Magnesio {
+public class CorrecaoCalcio_Magnesio implements ICorrecaoNutriente<FonteCalcioMagnesio> {
     
     public double somaPotassioCalcioMagnesio(double potassio, double calcio, double magnesio){
         return(potassio+calcio+magnesio);
