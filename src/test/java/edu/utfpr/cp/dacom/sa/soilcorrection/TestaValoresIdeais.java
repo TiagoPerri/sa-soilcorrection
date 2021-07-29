@@ -73,4 +73,4 @@ public class TestaValoresIdeais {
                 assertEquals(17.848837209302324, new EquilibrioCorrecaoCTC()
                                 .calculaCarbono(new EquilibrioCorrecaoCTC().calculaMOPercentual(30.7)));
         }
-      
+}
