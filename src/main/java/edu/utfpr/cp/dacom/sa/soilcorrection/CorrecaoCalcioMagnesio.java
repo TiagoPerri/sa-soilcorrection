@@ -1,6 +1,8 @@
 package edu.utfpr.cp.dacom.sa.soilcorrection;
 
-public class CorrecaoCalcioMagnesio 
+import lombok.Data;
+
+public class CorrecaoCalcioMagnesio
         implements ICorrecaoNutriente<FonteCalcioMagnesio> {
 
     public double calculaQuantidadeAplicar(
@@ -14,7 +16,6 @@ public class CorrecaoCalcioMagnesio
         if (prntPercent <= 0) {
             throw new IllegalArgumentException();
         }
-
         return qtdeFonteAdicionar / prntPercent;
     }
 }

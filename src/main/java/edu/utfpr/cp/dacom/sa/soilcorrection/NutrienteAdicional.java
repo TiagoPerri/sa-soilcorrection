@@ -1,5 +1,10 @@
 package edu.utfpr.cp.dacom.sa.soilcorrection;
 
+import lombok.Getter;
+import lombok.Setter;
+
+@Getter
+@Setter
 public class NutrienteAdicional {
 
     private final NomeNutrienteAdicional nome;
@@ -14,17 +19,4 @@ public class NutrienteAdicional {
         this.nome = nome;
         this.teorNutriente = teorNutriente;
     }
-
-    public double getTeorNutriente() {
-        return this.teorNutriente;
-    }
-
-    public void setCorrecaoAdicional(double correcaoAdicional) {
-        this.correcaoAdicional = correcaoAdicional;
-    }
-
-    public double getCorrecaoAdicional() {
-        return this.correcaoAdicional;
-    }
-    
 }

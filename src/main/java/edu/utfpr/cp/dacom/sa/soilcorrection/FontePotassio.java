@@ -1,7 +1,11 @@
 package edu.utfpr.cp.dacom.sa.soilcorrection;
 
+import lombok.Getter;
+import lombok.Setter;
 import java.util.Set;
 
+@Getter
+@Setter
 public enum FontePotassio implements IFonteNutriente {
     CLORETO_POTASSIO(0.58, Set.of()),
     SULFATO_POTASSIO(0.52, Set.of(new NutrienteAdicional(NomeNutrienteAdicional.ENXOFRE, 0.17))),
@@ -16,15 +20,5 @@ public enum FontePotassio implements IFonteNutriente {
 
         this.teorFonte = teorFonte;
         this.nutrientesAdicionais = nutrientesAdicionais;
-    }
-
-    @Override
-    public double getTeorFonte() {
-        return this.teorFonte;
-    }
-
-    @Override
-    public Set<NutrienteAdicional> getNutrientesAdicionais() {
-        return this.nutrientesAdicionais;
     }
 }

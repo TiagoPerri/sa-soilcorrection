@@ -1,7 +1,11 @@
 package edu.utfpr.cp.dacom.sa.soilcorrection;
 
+import lombok.Getter;
+import lombok.Setter;
 import java.util.Set;
 
+@Getter
+@Setter
 public enum FonteCalcioMagnesio 
         implements IFonteNutriente {
 
@@ -22,15 +26,4 @@ public enum FonteCalcioMagnesio
         this.teorFonte = teorFonte;
         this.nutrienteAdicionais = nutrienteAdicionais;
     }
-
-    @Override
-    public double getTeorFonte() {
-        return this.teorFonte;
-    }
-
-    @Override
-    public Set<NutrienteAdicional> getNutrientesAdicionais() {
-        return this.nutrienteAdicionais;
-    }
-
 }
