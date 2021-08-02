@@ -1,5 +1,7 @@
 package edu.utfpr.cp.dacom.sa.soilcorrection;
 
+import lombok.NonNull;
+
 import java.util.Set;
 
 public interface ICorrecaoNutriente<T extends IFonteNutriente> {
@@ -35,16 +37,8 @@ public interface ICorrecaoNutriente<T extends IFonteNutriente> {
     }
 
     public default double calculaEficienciaNutriente(
-        double qtdeNutrienteAdicionar, 
-        double eficienciaNutriente) {
-
-        if (qtdeNutrienteAdicionar <= 0) {
-            throw new IllegalArgumentException();
-        }
-
-        if (eficienciaNutriente <= 0) {
-            throw new IllegalArgumentException();
-        }
+        @NonNull double qtdeNutrienteAdicionar,
+        @NonNull double eficienciaNutriente) {
 
         return qtdeNutrienteAdicionar / eficienciaNutriente;
     }

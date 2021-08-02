@@ -1,16 +1,13 @@
 package edu.utfpr.cp.dacom.sa.soilcorrection;
 
-public class ConverteKgHaEmK2O 
+import lombok.NonNull;
+
+public class ConverteKgHaEmK2O
         implements Conversao<Double, Double> {
 
     @Override
-    public Double converte(Double valor) {
-
-        if (valor <= 0) {
-            throw new IllegalArgumentException();
-        }
+    public Double converte(@NonNull Double valor) {
 
         return valor * 1.2;
     }
-    
 }
