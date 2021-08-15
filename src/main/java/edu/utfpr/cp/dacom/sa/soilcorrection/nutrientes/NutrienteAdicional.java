@@ -1,5 +1,6 @@
-package edu.utfpr.cp.dacom.sa.soilcorrection;
+package edu.utfpr.cp.dacom.sa.soilcorrection.nutrientes;
 
+import edu.utfpr.cp.dacom.sa.soilcorrection.nutrientes.NomeNutrienteAdicional;
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
 import lombok.Setter;
